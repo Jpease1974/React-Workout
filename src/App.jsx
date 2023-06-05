@@ -8,6 +8,7 @@ import Trainers from './pages/trainers/Trainers'
 import NotFound from './pages/notfound/NotFound'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='*' element={<NotFound/>}/>
       </Routes>
       <Footer/>
+      <Analytics/>
       </BrowserRouter>
     </div>
   )
